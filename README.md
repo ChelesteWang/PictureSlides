@@ -1,6 +1,6 @@
 # 简易电子相册实现
 
-![Snipaste_2020-06-03_08-43-43](C:\Users\13902\Desktop\Snipaste_2020-06-03_08-43-43.png)
+![预览图](https://s1.ax1x.com/2020/06/03/tUYmef.png)
 
 ## 布局实现逻辑
 
