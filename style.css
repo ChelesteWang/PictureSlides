@@ -1,0 +1,157 @@
+/* 清除默认属性 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+
+ul,
+li {
+  list-style: none;
+}
+
+
+/* 设置容器轮播图初始化 */
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide {
+  /* 设置全屏轮播图 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /* 设置透明度变换为淡入淡出 */
+  transition: opacity 0.4s ease-in-out;
+}
+
+
+.slide.currentSlide {
+  /* 当前选中的透明度为百分之百 */
+  opacity: 1;
+}
+
+/* 设置轮播图背景 */
+
+.slide:nth-child(1){
+  background: url("img/slide1.jpeg") no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+  background: url("img/slide2.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(3) {
+  background: url("img/slide3.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(4) {
+  background: url("img/slide4.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(5) {
+  background: url("img/slide5.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(6) {
+  background: url("img/slide6.jpg") no-repeat center center/cover;
+}
+
+/* 设置按钮样式 */
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* 设置缩略图预览 */
+
+.miniPic {
+  position: absolute;
+  bottom: 5vh;
+  width: 100vw;
+  height: 20vh;
+  background-color: rgba(51, 51, 51, 0.4);
+}
+
+.miniPic ul {
+  display: flex;
+  bottom:2.5vh;
+}
+
+.miniPic ul li {
+  height: 15vh;
+  flex: 1;
+  margin: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+/* 设置缩略图背景 */
+.picture:nth-child(1){
+  background: url("img/slide1.jpeg")no-repeat center center/cover;
+}
+
+.picture:nth-child(2) {
+  background: url("img/slide2.jpg") no-repeat center center/cover;
+}
+
+.picture:nth-child(3) {
+  background: url("img/slide3.jpg") no-repeat center center/cover;
+}
+
+.picture:nth-child(4) {
+  background: url("img/slide4.jpg") no-repeat center center/cover;
+}
+
+.picture:nth-child(5) {
+  background: url("img/slide5.jpg") no-repeat center center/cover;
+}
+
+.picture:nth-child(6) {
+  background: url("img/slide6.jpg") no-repeat center center/cover;
+}
+
+.picture.currentPicture {
+  /* 当前选中的透明度为百分之五十 */
+  opacity: 0.5;
+}
